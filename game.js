@@ -230,14 +230,6 @@ function drawMountains() {
       peak.x + mountains.peakWidth / 2,
       canvas.height - peak.height + 20
     );
-    ctx.arc(
-      peak.x + mountains.peakWidth / 2,
-      canvas.height - peak.height + 20,
-      mountains.peakWidth / 4,
-      Math.PI,
-      0,
-      false
-    );
     ctx.lineTo(peak.x + mountains.peakWidth, canvas.height);
     ctx.closePath();
     ctx.fillStyle = peak.color; // Use the color assigned to this peak
